@@ -4,4 +4,13 @@
 }
 
 @import "_header.scss";
+
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
 @import "_footer.scss";
