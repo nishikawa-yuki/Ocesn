@@ -27,6 +27,11 @@
   font-weight: bold;
   padding: 10px;
   font-family: 'Megrim', cursive;
+  text-decoration: none;
+}
+
+.img-bg-01 .nav li a:hover {
+  text-decoration: underline;
 }
 
 body, html {
