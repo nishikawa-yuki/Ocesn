@@ -1,6 +1,136 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+}
+
+.img-bg-01 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.img-bg-01 .nav li {
+  list-style: none;
+  padding: 0 20px;
+}
+
+.img-bg-01 .nav li a {
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 10px;
+  font-family: 'Megrim', cursive;
+  text-decoration: none;
+}
+
+.img-bg-01 .nav li a:hover {
+  text-decoration: underline;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*画像を固定する背景*/
+header, section, footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+/*背景写真に対するCSS */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url("../img/top-page.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-02 {
+  background-image: url("画像のURL");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-03 {
+  background-image: url("../img/alexander-schimmeck-aY-mR749vMw-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-04 {
+  background-image: url("画像のURL");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  width: 100%;
+}
+
+.contents .contents-topic {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+  height: 100%;
+  width: 100%;
+}
+
+.contents .contents-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.contents .contents-img > img {
+  height: 300px;
+  width: 200px;
+  background-size: cover;
 }
 
 #contact {
