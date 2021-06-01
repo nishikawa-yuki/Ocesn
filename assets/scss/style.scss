@@ -41,7 +41,7 @@ header, section, footer {
 /*各背景の画像*/
 .img-bg-0{
   &1{
-    background-image: url('画像のURL');
+    background-image: url('../img/top-page.jpg');
     @include backgroundImgs;
   }
   &2{
