@@ -5,3 +5,41 @@
 
 @import "_header.scss";
 @import "_footer.scss";
+
+body,html {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*画像を固定する背景*/
+header, section, footer {
+  box-sizing: border-box;
+  color: #FFF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+/*背景写真に対するCSS */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url('header');
+}
+.img-bg-02 {
+  background-image: url('はるちゃんが画像');
+}
+.img-bg-03 {
+  background-image: url('すっしー画像');
+}
+.img-bg-04 {
+  background-image: url('みっすー画像');
+}
