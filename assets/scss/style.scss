@@ -43,3 +43,9 @@ header, section, footer {
 .img-bg-04 {
   background-image: url('みっすー画像');
 }
+
+#contact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
