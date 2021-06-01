@@ -60,12 +60,14 @@ header, section, footer {
 
 .contents {
   display: flex;
-  .contents-left {
+  .contents-topic {
     justify-content: center;
     align-content: center;
   }
-  .contents-right {
+  .contents-img {
     display: flex;
+    height: 300px;
+    width: 150px;
   }
 }
 

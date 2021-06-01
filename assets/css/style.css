@@ -92,7 +92,7 @@ header, section, footer {
   display: flex;
 }
 
-.contents .contents-left {
+.contents .contents-topic {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -100,10 +100,12 @@ header, section, footer {
       align-content: center;
 }
 
-.contents .contents-right {
+.contents .contents-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 300px;
+  width: 150px;
 }
 
 #contact {
