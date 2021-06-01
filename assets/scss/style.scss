@@ -30,20 +30,33 @@ header, section, footer {
   background-repeat: no-repeat;
 }
 
-/*各背景の画像*/
-.img-bg-01 {
-  background-image: url('header');
-}
-.img-bg-02 {
-  background-image: url('はるちゃんが画像');
-}
-.img-bg-03 {
-  background-image: url('すっしー画像');
-}
-.img-bg-04 {
-  background-image: url('みっすー画像');
+//background設定
+@mixin backgroundImgs(){
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
 }
 
+/*各背景の画像*/
+.img-bg-0{
+  &1{
+    background-image: url('画像のURL');
+    @include backgroundImgs;
+  }
+  &2{
+    background-image: url('画像のURL');
+    @include backgroundImgs;
+  }
+  &3{
+    background-image: url('../img/alexander-schimmeck-aY-mR749vMw-unsplash.jpg');
+    @include backgroundImgs;
+  }
+  &4{
+    background-image: url('画像のURL');
+    @include backgroundImgs;
+  }
+}
 #contact{
   display: flex;
   flex-direction: column;

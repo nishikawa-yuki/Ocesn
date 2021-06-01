@@ -1,6 +1,92 @@
+@charset "UTF-8";
 * {
   padding: 0;
   margin: 0;
+}
+
+.toppage {
+  background-image: url(../img/top-page.jpg);
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.toppage .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+body, html {
+  height: 100vh;
+  margin: 0 auto;
+}
+
+/*画像を固定する背景*/
+header, section, footer {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  color: #FFF;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100%;
+  padding: 5%;
+}
+
+/*背景写真に対するCSS */
+.parallax-bg {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+/*各背景の画像*/
+.img-bg-01 {
+  background-image: url("画像のURL");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-02 {
+  background-image: url("画像のURL");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-03 {
+  background-image: url("../img/alexander-schimmeck-aY-mR749vMw-unsplash.jpg");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
+}
+
+.img-bg-04 {
+  background-image: url("画像のURL");
+  background-size: cover;
+  height: 100vh;
+  width: 100vw;
+  background-attachment: fixed;
 }
 
 #contact {
