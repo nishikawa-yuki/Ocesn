@@ -3,6 +3,24 @@
   margin: 0;
 }
 
+.img-bg-01 .nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-right: 200px;
+  padding-left: 200px;
+}
+
+.img-bg-01 .nav a {
+  color: white;
+  font-size: 14px;
+}
+
 #contact {
   display: -webkit-box;
   display: -ms-flexbox;
