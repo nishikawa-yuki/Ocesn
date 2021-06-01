@@ -57,6 +57,18 @@ header, section, footer {
     @include backgroundImgs;
   }
 }
+
+.contents {
+  display: flex;
+  .contents-left {
+    justify-content: center;
+    align-content: center;
+  }
+  .contents-right {
+    display: flex;
+  }
+}
+
 #contact{
   display: flex;
   flex-direction: column;

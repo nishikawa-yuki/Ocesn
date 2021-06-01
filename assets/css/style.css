@@ -3,15 +3,8 @@
   padding: 0;
   margin: 0;
 }
-.img-bg-01 .nav {
-  background-image: url(../img/top-page.jpg);
-  background-size: cover;
-  height: 100vh;
-  width: 100vw;
-  background-attachment: fixed;
-}
 
-.toppage .nav {
+.img-bg-01 .nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,7 +21,8 @@
   color: white;
   font-size: 14px;
 }
-body,html {
+
+body, html {
   height: 100vh;
   margin: 0 auto;
 }
@@ -90,6 +84,26 @@ header, section, footer {
   height: 100vh;
   width: 100vw;
   background-attachment: fixed;
+}
+
+.contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.contents .contents-left {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.contents .contents-right {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #contact {
