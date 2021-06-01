@@ -102,6 +102,8 @@ header, section, footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: 100%;
+  width: 100%;
 }
 
 .contents .contents-topic {
@@ -110,14 +112,25 @@ header, section, footer {
           justify-content: center;
   -ms-flex-line-pack: center;
       align-content: center;
+  height: 100%;
+  width: 100%;
 }
 
 .contents .contents-img {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  height: 100%;
+  width: 100%;
+}
+
+.contents .contents-img > img {
   height: 300px;
-  width: 150px;
+  width: 200px;
+  background-size: cover;
 }
 
 #contact {
