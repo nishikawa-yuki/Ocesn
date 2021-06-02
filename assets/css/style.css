@@ -26,7 +26,7 @@
   font-size: 24px;
   font-weight: bold;
   padding: 10px;
-  font-family: 'Megrim', cursive;
+  font-family: "Megrim", cursive;
   text-decoration: none;
 }
 
@@ -260,7 +260,7 @@ main .slider {
   font-size: 20px;
   margin-bottom: 20px;
   padding: 3px 12px;
-  font-family: 'Megrim', cursive;
+  font-family: "Megrim", cursive;
 }
 
 #contact .btnlinestretches {
@@ -273,6 +273,7 @@ main .slider {
   display: inline-block;
   text-decoration: none;
   outline: none;
+  font-family: "Megrim", cursive;
   /*アニメーションの指定*/
   -webkit-transition: all 0.3s ease-in-out;
   transition: all 0.3s ease-in-out;
@@ -404,6 +405,7 @@ main .slider {
   text-transform: uppercase;
   text-decoration: none;
   font-size: 15px;
+  font-family: "Megrim", cursive;
   /*背景画像の指定*/
 }
 
@@ -478,5 +480,6 @@ footer {
   text-align: center;
   color: white;
   background-color: black;
+  font-family: "Megrim", cursive;
 }
 /*# sourceMappingURL=style.css.map */
