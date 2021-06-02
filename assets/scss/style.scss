@@ -96,16 +96,16 @@ header, section /*footer*/  {
 }
 
 
-<<<<<<< HEAD
+
 //SWIPER
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-  width:94%;
+  width: 80%;
   margin:0 auto;
 }
 
 .slider img {
   width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
-  height:auto;
+  height:60vh;
 }
 
 .slider .slick-slide {
@@ -170,25 +170,6 @@ margin:0 5px;
 .slick-dots .slick-active button{
   background:#333;/*ドットボタンの現在地表示の色*/
 } 
-
-
-
-
-
-
-=======
-// .photo {
-//   &1 {
-//     @include phototop(100px)
-//   }
-//   &2 {
-//     @include phototop(150px)
-//   }
-//   &3 {
-//     @include phototop(200px)
-//   }
-// }
->>>>>>> c8e69d590f52bdcf172f82ff5ec1d4c52429e670
 
 
 /*コンタクト*/
