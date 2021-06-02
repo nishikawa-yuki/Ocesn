@@ -115,6 +115,10 @@ main .slider {
   background-attachment: fixed;
 }
 
+#africa, #asia, #europe {
+  font-size: 100px;
+}
+
 .slider {
   /*横幅94%で左右に余白を持たせて中央寄せ*/
   width: 94%;
