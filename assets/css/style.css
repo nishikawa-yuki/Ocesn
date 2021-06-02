@@ -127,10 +127,27 @@ header, section, footer {
   width: 100%;
 }
 
-.contents .contents-img > img {
+.contents .contents-img .photo1 {
+  position: relative;
   height: 300px;
   width: 200px;
   background-size: cover;
+}
+
+.contents .contents-img .photo2 {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+  top: 250px;
+}
+
+.contents .contents-img .photo3 {
+  position: relative;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+  top: 400px;
 }
 
 #contact {

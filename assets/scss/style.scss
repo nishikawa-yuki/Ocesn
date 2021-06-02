@@ -57,6 +57,17 @@ header, section, footer {
     @include backgroundImgs;
   }
 }
+//先生に相談
+// $photoT1: 100;
+// $photoT2:100%/4;
+// $photoT3:100%/5;
+
+@mixin phototop($top){
+  position: relative;
+  height: 300px;
+  width: 200px;
+  background-size: cover;
+}
 
 .contents {
   display: flex;
@@ -73,13 +84,31 @@ header, section, footer {
     justify-content: space-between;
     height: 100%;
     width: 100%;
-    >img {
-      height: 300px;
-      width: 200px;
-      background-size: cover;
+    .photo{
+      &1{
+        @include phototop();
+      }
+      &2{
+        @include phototop();
+      }
+      &3{
+        @include phototop();
+      }
     }
   }
 }
+
+// .photo {
+//   &1 {
+//     @include phototop(100px)
+//   }
+//   &2 {
+//     @include phototop(150px)
+//   }
+//   &3 {
+//     @include phototop(200px)
+//   }
+// }
 
 #contact{
   display: flex;
