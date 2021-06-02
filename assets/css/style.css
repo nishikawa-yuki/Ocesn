@@ -149,6 +149,12 @@ header, section {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  /*== 外の線が伸びる */
+  /*hoverした際の背景の形状*/
+  /*線の設定*/
+  /*線の位置と形状*/
+  /*線の位置と形状*/
+  /*hoverした際の線の形状*/
 }
 
 #contact h1 {
@@ -175,6 +181,59 @@ header, section {
   margin-bottom: 20px;
   padding: 3px 12px;
   font-family: 'Megrim', cursive;
+}
+
+#contact .btnlinestretches {
+  /*線の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  color: #333;
+  border: 1px solid #333;
+  padding: 10px 30px;
+  display: inline-block;
+  text-decoration: none;
+  outline: none;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .btnlinestretches:hover {
+  background: #333;
+  color: #fff;
+  border-color: transparent;
+}
+
+#contact .btnlinestretches::before,
+#contact .btnlinestretches::after {
+  content: '';
+  /*絶対配置で線の位置を決める*/
+  position: absolute;
+  border: solid #333;
+  width: 10px;
+  height: 10px;
+  /*アニメーションの指定*/
+  -webkit-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+#contact .btnlinestretches::before {
+  top: -6px;
+  left: -6px;
+  border-width: 1px 0 0 1px;
+}
+
+#contact .btnlinestretches::after {
+  bottom: -6px;
+  right: -6px;
+  border-width: 0 1px 1px 0;
+}
+
+#contact .btnlinestretches:hover::before,
+#contact .btnlinestretches:hover::after {
+  width: calc(100% + 11px);
+  height: calc(100% + 11px);
+  border-color: #666;
 }
 
 footer {
