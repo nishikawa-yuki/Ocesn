@@ -100,14 +100,14 @@ header, section {
 
 .slider {
   /*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 94%;
+  width: 80%;
   margin: 0 auto;
 }
 
 .slider img {
   width: 60vw;
   /*スライダー内の画像を60vwにしてレスポンシブ化*/
-  height: auto;
+  height: 60vh;
 }
 
 .slider .slick-slide {
