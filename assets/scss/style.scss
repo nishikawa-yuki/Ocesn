@@ -19,6 +19,19 @@ header, section /*footer*/  {
   padding: 5%;
 }
 
+main{
+  .contents-topic{
+    width: 45%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .slider{
+    width: 55%;
+  }
+}
+
+
 /*背景写真に対するCSS */
 .parallax-bg {
   background-attachment: fixed;
@@ -58,7 +71,7 @@ header, section /*footer*/  {
 
 //SWIPER
 .slider {/*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 80%;
+  width: 94%;
   margin:0 auto;
 }
 

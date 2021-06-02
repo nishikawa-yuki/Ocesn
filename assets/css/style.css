@@ -57,6 +57,23 @@ header, section {
   padding: 5%;
 }
 
+main .contents-topic {
+  width: 45%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main .slider {
+  width: 55%;
+}
+
 /*背景写真に対するCSS */
 .parallax-bg {
   background-attachment: fixed;
@@ -100,7 +117,7 @@ header, section {
 
 .slider {
   /*横幅94%で左右に余白を持たせて中央寄せ*/
-  width: 80%;
+  width: 94%;
   margin: 0 auto;
 }
 
