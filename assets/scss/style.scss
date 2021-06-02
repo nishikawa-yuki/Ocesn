@@ -2,17 +2,14 @@
   padding: 0;
   margin: 0;
 }
-
 @import "_header.scss";
-@import "_footer.scss";
-
 body,html {
   height: 100vh;
   margin: 0 auto;
 }
 
 /*画像を固定する背景*/
-header, section, footer {
+header, section /*footer*/  {
   box-sizing: border-box;
   color: #FFF;
   display: flex;
@@ -53,7 +50,7 @@ header, section, footer {
     @include backgroundImgs;
   }
   &4{
-    background-image: url('画像のURL');
+    background-image: url('../img/angelique-emonet-BCMHxt76Q34-unsplash.jpg');
     @include backgroundImgs;
   }
 }
@@ -81,8 +78,31 @@ header, section, footer {
   }
 }
 
+/*コンタクト*/
 #contact{
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  color: gray;
+  height: 100vh;
   display: flex;
-  flex-direction: column;
   align-items: center;
+  flex-direction: column;
+  h1{
+    font-family: 'Megrim', cursive;
+  }
+    .contact-wrap{
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      margin-top: 20px;
+    }
+    input, textarea {
+      width: 90%;
+      font-size: 20px;
+      margin-bottom: 20px;
+      padding: 3px 12px;
+      font-family: 'Megrim', cursive;
+    }
 }
+
+@import "_footer.scss";

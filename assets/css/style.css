@@ -40,7 +40,7 @@ body, html {
 }
 
 /*画像を固定する背景*/
-header, section, footer {
+header, section {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   color: #FFF;
@@ -91,7 +91,7 @@ header, section, footer {
 }
 
 .img-bg-04 {
-  background-image: url("画像のURL");
+  background-image: url("../img/angelique-emonet-BCMHxt76Q34-unsplash.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -133,16 +133,53 @@ header, section, footer {
   background-size: cover;
 }
 
+/*コンタクト*/
 #contact {
+  background-image: url(../img/contact.jpg);
+  background-size: cover;
+  color: gray;
+  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#contact h1 {
+  font-family: 'Megrim', cursive;
+}
+
+#contact .contact-wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-top: 20px;
+}
+
+#contact input, #contact textarea {
+  width: 90%;
+  font-size: 20px;
+  margin-bottom: 20px;
+  padding: 3px 12px;
+  font-family: 'Megrim', cursive;
+}
+
+footer {
+  text-align: center;
+  color: white;
+  background-color: black;
 }
 /*# sourceMappingURL=style.css.map */
