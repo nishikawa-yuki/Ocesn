@@ -42,7 +42,7 @@ header, section /*footer*/  {
     @include backgroundImgs;
   }
   &2{
-    background-image: url('画像のURL');
+    background-image: url('../img/africa.jpg');
     @include backgroundImgs;
   }
   &3{
