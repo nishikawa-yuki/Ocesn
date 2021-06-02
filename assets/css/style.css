@@ -233,7 +233,8 @@ main .slider {
 }
 
 #contact h1 {
-  font-family: 'Megrim', cursive;
+  font-family: "Megrim", cursive;
+  font-size: 50px;
 }
 
 #contact .contact-wrap {
