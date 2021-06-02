@@ -75,7 +75,7 @@ header, section {
 }
 
 .img-bg-02 {
-  background-image: url("画像のURL");
+  background-image: url("../img/africa.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
