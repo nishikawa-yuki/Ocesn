@@ -7,6 +7,8 @@ $font: 'Megrim', cursive;
 
 
 @import "_header.scss";
+
+
 body,html {
   height: 100vh;
   margin: 0 auto;
@@ -84,7 +86,7 @@ main{
 }
 
 .slider img {
-  width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+  width:80vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
   height:60vh;
 }
 
@@ -331,6 +333,37 @@ section{
 padding: 500px 0;
 }
 
-
-
 @import "_footer.scss";
+
+
+// @mixinの応用:メディアクエリ
+$pc:1024px;
+$sp:640px;
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point){
+        @content;
+    }
+}
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point){
+        @content;
+    }
+}
+@mixin screen($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max){
+        @content;
+    }
+}
+
+// 使用例
+div{
+    @include max-screen($sp){ //スマホサイズ
+        width: 100%;// contentの中身
+    }
+    @include min-screen($pc){//　pcサイズ
+        width: 50%;
+    }
+    @include screen($sp, $pc){ //　タブレットサイズ
+        width: 75%;
+    }
+}

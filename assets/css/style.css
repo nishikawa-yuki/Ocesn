@@ -126,7 +126,7 @@ main .slider {
 }
 
 .slider img {
-  width: 60vw;
+  width: 80vw;
   /*スライダー内の画像を60vwにしてレスポンシブ化*/
   height: 60vh;
 }
@@ -481,5 +481,23 @@ footer {
   color: white;
   background-color: black;
   font-family: "Megrim", cursive;
+}
+
+@media screen and (max-width: 640px) {
+  div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  div {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
