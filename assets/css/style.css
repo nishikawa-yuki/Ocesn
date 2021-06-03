@@ -146,6 +146,101 @@ main .slider {
   font-family: "Megrim", cursive;
 }
 
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/* 上下のアニメーション*/
+.upAnime {
+  opacity: 0;
+  /* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+  -webkit-animation-name: slideTextY100;
+          animation-name: slideTextY100;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextY100 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    /* 要素を上の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextY100 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    /* 要素を上の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeUpDown {
+  -webkit-animation-name: slideTextY-100;
+          animation-name: slideTextY-100;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextY-100 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    /* 要素を下の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextY-100 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    /* 要素を下の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
 .slider {
   /*横幅94%で左右に余白を持たせて中央寄せ*/
   width: 94%;
