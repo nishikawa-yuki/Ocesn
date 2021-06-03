@@ -420,3 +420,16 @@ div{
         width: 75%;
     }
 }
+
+section {
+  @include max-screen($sp){ //スマホサイズ
+    flex-direction: column;// contentの中身
+}
+}
+
+
+#africa,#asia,#europe{
+  @include max-screen($sp){ //スマホサイズ
+    font-size: 50px;// contentの中身
+}
+}
