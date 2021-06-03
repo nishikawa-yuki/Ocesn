@@ -431,5 +431,5 @@ section {
 #africa,#asia,#europe{
   @include max-screen($sp){ //スマホサイズ
     font-size: 50px;// contentの中身
-}
+ }
 }
