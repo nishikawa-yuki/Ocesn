@@ -16,12 +16,38 @@
           align-items: center;
 }
 
-.img-bg-01 .nav li {
+.img-bg-01 .nav .fwari {
+  animation: fwari ease-in-out 2s infinite alternate;
+  -webkit-animation: fwari ease-in-out 2s infinite alternate;
+  -moz-animation: fwari ease-in-out 2s infinite alternate;
+}
+
+@keyframes fwari {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+            transform: translate(0%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -30px);
+            transform: translate(0%, -30px);
+  }
+}
+
+@-webkit-keyframes fwari {
+  0% {
+    -webkit-transform: translate(0%, 0%);
+  }
+  100% {
+    -webkit-transform: translate(0%, -30px);
+  }
+}
+
+.img-bg-01 li {
   list-style: none;
   padding: 0 20px;
 }
 
-.img-bg-01 .nav li a {
+.img-bg-01 li a {
   color: white;
   font-size: 24px;
   font-weight: bold;
@@ -30,7 +56,7 @@
   text-decoration: none;
 }
 
-.img-bg-01 .nav li a:hover {
+.img-bg-01 li a a:hover {
   text-decoration: underline;
 }
 
@@ -92,7 +118,7 @@ main .slider {
 }
 
 .img-bg-02 {
-  background-image: url("../img/africa.jpg");
+  background-image: url("../img/Tsavo East National Park Kenya, Africa, Kenya.jpg");
   background-size: cover;
   height: 100vh;
   width: 100vw;
@@ -117,6 +143,7 @@ main .slider {
 
 #africa, #asia, #europe {
   font-size: 100px;
+  font-family: "Megrim", cursive;
 }
 
 .slider {
