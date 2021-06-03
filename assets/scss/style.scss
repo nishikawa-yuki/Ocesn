@@ -7,6 +7,8 @@ $font: 'Megrim', cursive;
 
 
 @import "_header.scss";
+
+
 body,html {
   height: 100vh;
   margin: 0 auto;
@@ -74,6 +76,59 @@ main{
 
 #africa,#asia,#europe {
   font-size: 100px;
+  font-family: $font;
+}
+
+//h2のアニメーション
+
+.slide-in {
+	overflow: hidden;
+    display: inline-block;
+}
+
+.slide-in_inner {
+	display: inline-block;
+
+}
+
+/* 上下のアニメーション*/
+.upAnime{
+    opacity: 0;/* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+    animation-name:slideTextY100;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY100 {
+    from {
+        transform: translateY(100%);/* 要素を上の枠外に移動*/
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);/* 要素を元の位置に移動*/
+        opacity: 1;
+    }
+}
+.slideAnimeUpDown {
+    animation-name:slideTextY-100;
+    animation-duration:3s;
+    animation-fill-mode:forwards;
+    opacity: 0;
+}
+
+@keyframes slideTextY-100 {
+    from {
+    transform: translateY(-100%);/* 要素を下の枠外に移動*/
+    opacity: 0;
+    }
+    to {
+    transform: translateY(0);/* 要素を元の位置に移動*/
+    opacity: 1;
+    }
 }
 
 
@@ -84,7 +139,7 @@ main{
 }
 
 .slider img {
-  width:60vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
+  width:80vw;/*スライダー内の画像を60vwにしてレスポンシブ化*/
   height:60vh;
 }
 
@@ -331,6 +386,37 @@ section{
 padding: 500px 0;
 }
 
-
-
 @import "_footer.scss";
+
+
+// @mixinの応用:メディアクエリ
+$pc:1024px;
+$sp:640px;
+@mixin max-screen($break-point) {
+    @media screen and (max-width: $break-point){
+        @content;
+    }
+}
+@mixin min-screen($break-point) {
+    @media screen and (min-width: $break-point){
+        @content;
+    }
+}
+@mixin screen($min, $max) {
+    @media screen and (min-width: $min) and (max-width: $max){
+        @content;
+    }
+}
+
+// 使用例
+div{
+    @include max-screen($sp){ //スマホサイズ
+        width: 100%;// contentの中身
+    }
+    @include min-screen($pc){//　pcサイズ
+        width: 50%;
+    }
+    @include screen($sp, $pc){ //　タブレットサイズ
+        width: 75%;
+    }
+}

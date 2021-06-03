@@ -144,6 +144,102 @@ main .slider {
 
 #africa, #asia, #europe {
   font-size: 100px;
+  font-family: "Megrim", cursive;
+}
+
+.slide-in {
+  overflow: hidden;
+  display: inline-block;
+}
+
+.slide-in_inner {
+  display: inline-block;
+}
+
+/* 上下のアニメーション*/
+.upAnime {
+  opacity: 0;
+  /* 事前に透過0 にして消しておく*/
+}
+
+.slideAnimeDownUp {
+  -webkit-animation-name: slideTextY100;
+          animation-name: slideTextY100;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextY100 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    /* 要素を上の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextY100 {
+  from {
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+    /* 要素を上の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+.slideAnimeUpDown {
+  -webkit-animation-name: slideTextY-100;
+          animation-name: slideTextY-100;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+  opacity: 0;
+}
+
+@-webkit-keyframes slideTextY-100 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    /* 要素を下の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
+}
+
+@keyframes slideTextY-100 {
+  from {
+    -webkit-transform: translateY(-100%);
+            transform: translateY(-100%);
+    /* 要素を下の枠外に移動*/
+    opacity: 0;
+  }
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+    /* 要素を元の位置に移動*/
+    opacity: 1;
+  }
 }
 
 .slider {
@@ -153,7 +249,7 @@ main .slider {
 }
 
 .slider img {
-  width: 60vw;
+  width: 80vw;
   /*スライダー内の画像を60vwにしてレスポンシブ化*/
   height: 60vh;
 }
@@ -508,5 +604,23 @@ footer {
   color: white;
   background-color: black;
   font-family: "Megrim", cursive;
+}
+
+@media screen and (max-width: 640px) {
+  div {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  div {
+    width: 50%;
+  }
+}
+
+@media screen and (min-width: 640px) and (max-width: 1024px) {
+  div {
+    width: 75%;
+  }
 }
 /*# sourceMappingURL=style.css.map */
