@@ -408,18 +408,18 @@ $sp:640px;
     }
 }
 
-// 使用例
-div{
-    @include max-screen($sp){ //スマホサイズ
-        width: 100%;// contentの中身
-    }
-    @include min-screen($pc){//　pcサイズ
-        width: 50%;
-    }
-    @include screen($sp, $pc){ //　タブレットサイズ
-        width: 75%;
-    }
-}
+// // 使用例
+// div{
+//     @include max-screen($sp){ //スマホサイズ
+//         width: 100%;// contentの中身
+//     }
+//     @include min-screen($pc){//　pcサイズ
+//         width: 50%;
+//     }
+//     @include screen($sp, $pc){ //　タブレットサイズ
+//         width: 75%;
+//     }
+// }
 
 section {
   @include max-screen($sp){ //スマホサイズ
