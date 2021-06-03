@@ -142,7 +142,7 @@ main .slider {
   background-attachment: fixed;
 }
 
-#africa, #asia, #europe {
+.africa, .asia, .europe {
   font-size: 100px;
   font-family: "Megrim", cursive;
 }
@@ -616,7 +616,7 @@ footer {
 }
 
 @media screen and (max-width: 640px) {
-  #africa, #asia, #europe {
+  .africa, .asia, .europe {
     font-size: 50px;
   }
 }

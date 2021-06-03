@@ -74,7 +74,7 @@ main{
   }
 }
 
-#africa,#asia,#europe {
+.africa,.asia,.europe {
   font-size: 100px;
   font-family: $font;
 }
@@ -428,7 +428,7 @@ section {
 }
 
 
-#africa,#asia,#europe{
+.africa,.asia,.europe{
   @include max-screen($sp){ //スマホサイズ
     font-size: 50px;// contentの中身
  }
